@@ -1,0 +1,45 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 1rem;
+  gap: 0.5rem 0.75rem;
+}
+
+.task > p, .task > .pCompleted {
+  width: 100%;
+  text-align: start;
+}
+
+.task > .pCompleted {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.task .checkboxChecked {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--purple-dark);
+  cursor: pointer;
+}
+
+.task .checkboxUnchecked {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--blue-light);
+  cursor: pointer;
+}
+
+.task .trash {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+}
